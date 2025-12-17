@@ -10,8 +10,11 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: azure;
-    margin:0;
+    max-width: 1200px;
+    margin: 0;
+    padding: 20px;
 }
+
 header{
     background-color: rgb(75, 65, 65);
     color:white;
@@ -24,15 +27,34 @@ section{
     margin:20px;
     padding:20px;
     border-radius: 8px;
+    
 }
 h2{
     border-bottom:2px solid grey;
     padding-bottom:5px;
     text-align: center;
 }
+summary, li {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px;
+    background-color: lightblue;
+    padding: 8px; 
+    border-radius: 8px; 
+}
 
+li a{
+    text-decoration: none;
+    color:black;
+}
+li a:hover{
+    text-decoration:underline;
+}
 
-
+details[open] > summary {
+  background-color:rgb(117, 163, 163);
+  color: white;
+}
 </style>    
 </head>
 <body>
@@ -43,56 +65,76 @@ h2{
         <h2>Bemutatkozás</h2>
         <p>Ez a weboldal a tanulmányaim során készített munkáimat és fejlődésemet mutatja be.</p>
     </section>
-
+    
+    <section>
+        <h2>Rólam</h2>
+        <p>Ez a weboldal a tanulmányaim során készített munkáimat és fejlődésemet mutatja be.</p>
+    </section>
 
     <section>
         <h2>Munkáim</h2>
     <details>
     <summary>Mikrovezérlő programozás</summary>
         <ul>
-            <li>Sajt</li>
-            <li>sajt</li>
-            <li>sajt</li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
         </ul>
     </details>
 
     <details>
     <summary>PLC programozás</summary>
         <ul>
-            <li>Sajt</li>
-            <li>sajt</li>
-            <li>sajt</li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
         </ul>
     </details>
     
     <details>
     <summary>Weblapfejlesztés</summary>
         <ul>
-            <li>Sajt</li>
-            <li>sajt</li>
-            <li>sajt</li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
         </ul>
     </details>
     <details>
     
     <summary>Hálózatkezelés</summary>
         <ul>
-            <li>Sajt</li>
-            <li>sajt</li>
-            <li>sajt</li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
         </ul>
     </details>
     <details>
     <summary>IoT </summary>
         <ul>
-            <li>Sajt</li>
-            <li>sajt</li>
-            <li>sajt</li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
         </ul>
     </details>
     
-    
+    <details>
+    <summary>Nestlé gyakorlat </summary>
+        <ul>
+            <li><a href=".html">Frekivalto</a></li>
+            <li><a href=".html">Sajt</a></li>
+            <li><a href=".html">Sajt</a></li>
 
+        </ul>
+    </details>
+    
+    <details>
+    <summary>Egyéb projektek</summary>
+        <ul>
+            <li><a href="siemenshmi.html">Siemens HMI beüzemelése, problémák megoldása</a></li>
+            <li><a href=".html">Cisco switch beüzemelése PLC kapcsolatokhoz</a></li>
+            <li>sajt</li>
+        </ul>
+    </details>
     </section>
 </body>
 </html>
