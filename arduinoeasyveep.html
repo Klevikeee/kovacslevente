@@ -15,19 +15,35 @@
     <span class="cimsor">Mikrovezérlés</span>
     </header>
     <section class="mainsection">
-        <h2>Cim</h2>
+        <h2>EasyVeep szimuláció vezérlése Arduinoval</h2>
         <h3>Feladat leirása:</h3>
         <ul>
             <li>
-                loremipsum
+                Adott volt az EasyVeep szimulációs program, és a feladat volt hogy 
             </li>
         </ul>
     </section>
 
-    <section class="mainsection">
-    <h3>Megvalósitás:</h3>
-    <p>loremipsum</p>
-    </section>
+<section class="mainsection">
+    <h3>Megvalósitás</h3>
+        <ul>
+            <li>A feladat megvalósítása egy ESP32 mikrokontrollerrel történt. Először egy alap programkóddal teszteltem a nedvességérzékelő szenzort, ezután mértem száraz/nedves földet, és ez alapján meghatároztam a "szaraz", "nedves" , "inditas" és "leallitas" változót
+                <pre><code>
+void setup() {
+pinMode(5, OUTPUT);
+Serial.begin(9600);
+}
+void loop() {
+int nedvesseg = analogRead(5);
+Serial.print("Nedvesseg: ");
+
+Serial.println(nedvesseg);
+}
+}
+                </code></pre>
+                Ezután elkészült a kapcsolási rajz, utána pedig teszteltem a programot.
+            </li>
+        </section>
 
 </body>
 
